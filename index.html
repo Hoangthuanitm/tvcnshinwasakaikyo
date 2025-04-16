@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Từ vựng chuyên ngành</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #e6f0fa 0%, #f7f9fc 100%);
+      padding: 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a3c5e;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #e0e7ff;
+      line-height: 1.4;
+      vertical-align: top;
+    }
+
+    th {
+      background: linear-gradient(to right, #3b82f6, #2563eb);
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Độ rộng cột */
+    th:nth-child(1), td:nth-child(1) { /* STT */
+      width: 5%;
+      min-width: 50px;
+    }
+    th:nth-child(2), td:nth-child(2) { /* Từ vựng (Nhật) */
+      width: 20%;
+      min-width: 150px;
+    }
+    th:nth-child(3), td:nth-child(3) { /* Phiên âm Hiragana */
+      width: 20%;
+      min-width: 150px;
+    }
+    th:nth-child(4), td:nth-child(4) { /* Nghĩa tiếng Việt */
+      width: 20%;
+      min-width: 150px;
+    }
+    th:nth-child(5), td:nth-child(5) { /* Ghi chú */
+      width: 35%;
+      min-width: 200px;
+      overflow-wrap: break-word;
+    }
+
+    tr {
+      transition: background 0.3s ease;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tr:hover {
+      background-color: #eff6ff;
+      transform: translateY(-2px);
+    }
+
+    td {
+      color: #2d3748;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      color: #6b7280;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 20px 0;
+      color: #4b5563;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    footer a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      th, td {
+        padding: 10px;
+        font-size: 0.85rem;
+      }
+
+      .table-container {
+        overflow-x: auto;
+      }
+
+      /* Điều chỉnh độ rộng cột cho màn hình nhỏ */
+      th:nth-child(1), td:nth-child(1) {
+        min-width: 40px;
+      }
+      th:nth-child(2), td:nth-child(2) {
+        min-width: 120px;
+      }
+      th:nth-child(3), td:nth-child(3) {
+        min-width: 120px;
+      }
+      th:nth-child(4), td:nth-child(4) {
+        min-width: 120px;
+      }
+      th:nth-child(5), td:nth-child(5) {
+        min-width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Từ vựng chuyên ngành (17 từ)</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Từ vựng (Nhật)</th>
+          <th>Phiên âm Hiragana</th>
+          <th>Nghĩa tiếng Việt</th>
+          <th>Ghi chú</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>コンプレッサー</td><td>–</td><td>Máy nén áp suất</td><td class="note">Có 2 loại: 134（いちさんよん）và 1234（いちにさんよん） – Kiểm tra lại tên máy tại công ty</td></tr>
+        <tr><td>2</td><td>ベルト</td><td>–</td><td>Dây đai</td><td></td></tr>
+        <tr><td>3</td><td>はずします（はずす）</td><td>はずします</td><td>Tháo ra</td><td></td></tr>
+        <tr><td>4</td><td>車ばらし（くるまばらし）</td><td>くるまばらし</td><td>Tháo rời ô tô</td><td></td></tr>
+        <tr><td>5</td><td>高圧（こうあつ）、低圧（ていあつ）</td><td>こうあつ、ていあつ</td><td>Áp suất cao, áp suất thấp</td><td></td></tr>
+        <tr><td>6</td><td>すてます（すてる）</td><td>すてます</td><td>Vứt bỏ</td><td></td></tr>
+        <tr><td>7</td><td>ハイブリッド車</td><td>はいぶりっどしゃ</td><td>Xe hybrid (kết hợp xăng + điện)</td><td class="note">Không có dây đai → Dùng máy nén thông thường</td></tr>
+        <tr><td>8</td><td>ハイブリッド車じゃない</td><td>はいぶりっどしゃじゃない</td><td>Xe không phải hybrid</td><td class="note">Có dây đai → Dùng máy nén điện</td></tr>
+        <tr><td>9</td><td>ストッパー</td><td>–</td><td>Thanh chặn</td><td class="note">Phía sau của máy nén khí</td></tr>
+        <tr><td>10</td><td>冷却水（れいきゃくすい）</td><td>れいきゃくすい</td><td>Nước làm mát</td><td class="note">Trong hộp động cơ xe</td></tr>
+        <tr><td>11</td><td>エンジン</td><td>–</td><td>Động cơ</td><td></td></tr>
+        <tr><td>12</td><td>さいしょに～</td><td>さいしょに～</td><td>Trước tiên ~</td><td></td></tr>
+        <tr><td>13</td><td>さいごに～</td><td>さいごに～</td><td>Sau cùng ~</td><td></td></tr>
+        <tr><td>14</td><td>塗装（とそう）</td><td>とそう</td><td>Sơn</td><td></td></tr>
+        <tr><td>15</td><td>ピンク⇒交換（こうかん）、あおい⇒修理（しゅうり）</td><td>こうかん、しゅうり</td><td>Màu hồng → Thay mới, Màu xanh → Sửa chữa</td><td class="note">Trên giấy nhận xe</td></tr>
+        <tr><td>16</td><td>ねじ</td><td>ねじ</td><td>Ốc, vít</td><td></td></tr>
+        <tr><td>17</td><td>きず</td><td>きず</td><td>Vết xước</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    © 2025 Tài liệu từ vựng | Thiết kế bởi <a href="#">Thuận</a>
+  </footer>
+</body>
+</html>
